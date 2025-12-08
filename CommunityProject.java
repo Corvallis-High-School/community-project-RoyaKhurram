@@ -1,7 +1,17 @@
 public class CommunityProject {
     // 1. write 3 instance variables for class: private type variableName;
+    private String eventName;
+    private int day;
+    private int month;
+
 
     // 2. Add a constructor with 3 parameters to set all of the instance variables to the given parameters.
+    public CommunityProject(String eventName, int day, int month)
+    {
+        this.eventName = eventName;
+        this.day = day;
+        this.month = month;
+    }
 
     // 3. Write a print() method that uses System.out.println to print out all the instance variables.
 
