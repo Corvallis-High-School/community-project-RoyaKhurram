@@ -42,7 +42,14 @@ public class CommunityProject {
     {
         return month;
     }
-    
+    public String getTime()
+    {
+        return time;
+    }
+    public String getLocation()
+    {
+        return location;
+    }
 
     // 5. Create mutator (set) methods for each of the instance variables.
     public void setEventName(String eventName)
@@ -82,6 +89,4 @@ public class CommunityProject {
         
     }
 }
-
-    // 8. Write a main method that constructs at least 2 objects of your class using the constructor and then calls all of the methods that you created above to test them.
     

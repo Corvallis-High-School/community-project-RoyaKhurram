@@ -28,6 +28,6 @@ public String donate(double amt)
 public void print()
 {
     super.print();
-    System.out.print( "Money needed to raise: " + moneyNeeded + " this event is for " + eventFor);
+    System.out.println(" Money needed to raise: " + moneyNeeded + " this event is for " + eventFor);
 }
 }

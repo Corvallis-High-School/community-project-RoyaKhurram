@@ -21,14 +21,11 @@ public class SportEvent extends CommunityProject
         return super.toString() + " game of: " + sport + ", " + teamA + " against " + teamB + " Current score of "  + teamA + " is: " + score;
 
     }
-    public void addPoint()
+    public void changeScore(int change)
     {
-        score++;
+        score += change;
     }
-    public void removePoint()
-    {
-        score--;
-    }
+    
     public int getScore()
     {
         return score;
@@ -39,4 +36,5 @@ public class SportEvent extends CommunityProject
         System.out.println(sport + " game." + " Team A is " + teamA + " and team B is " + teamB + " the current score is " + score);
     }
     }
+    
     
