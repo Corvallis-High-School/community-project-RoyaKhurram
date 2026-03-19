@@ -1,8 +1,8 @@
 public class FundraiserEvent extends CommunityProject
 {
 private double moneyNeeded;
-private double amtRaised = 0;
 private String eventFor;
+private double amtRaised =0;
 public FundraiserEvent()
 {
 }
@@ -13,6 +13,10 @@ public FundraiserEvent(String eventName, int day, int month, int year, String ti
     this.eventFor = eventFor;
 
 }
+public double getAmtRaised()
+{
+    return amtRaised;
+}
 public double getMoneyNeeded()
 {
     return moneyNeeded;
@@ -22,7 +26,18 @@ public String getEventFor()
     return eventFor;
 
 }
-
+public void setMoneyNeeded(double moneyNeeded)
+{
+    this.moneyNeeded=moneyNeeded;
+}
+public void setEventFor(String eventFor)
+{
+    this.eventFor= eventFor;
+}
+public void setAmtRaised(double amtRaised)
+{
+    this.amtRaised = amtRaised;
+}
 public String toString()
 {
     return  super.toString() + ", " + "Money needed " + moneyNeeded + " Cause for Fundraiser: " + eventFor;
@@ -30,7 +45,7 @@ public String toString()
 public String donate(double amt)
 {
     amtRaised += amt;
-    moneyNeeded-= amt;
+    setMoneyNeeded((moneyNeeded-amt));
     return "Thanks for the donation we are " + (moneyNeeded-amtRaised) + " away from our goal of " + moneyNeeded;
 }
 public void print()
