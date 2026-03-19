@@ -25,4 +25,9 @@ public String donate(double amt)
     moneyNeeded-= amt;
     return "Thanks for the donation we are " + (moneyNeeded-amtRaised) + " away from our goal of " + moneyNeeded;
 }
+public void print()
+{
+    super.print();
+    System.out.print( "Money needed to raise: " + moneyNeeded + " this event is for " + eventFor);
+}
 }

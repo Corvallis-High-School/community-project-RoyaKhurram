@@ -33,7 +33,10 @@ public class SportEvent extends CommunityProject
     {
         return score;
     }
+    public void print()
+    {
+        super.print();
+        System.out.println(sport + " game." + " Team A is " + teamA + " and team B is " + teamB + " the current score is " + score);
+    }
+    }
     
-
-
-}
