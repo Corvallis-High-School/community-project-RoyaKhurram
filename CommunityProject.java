@@ -6,12 +6,16 @@ public class CommunityProject {
     private int year;
     private String time;
     private String location;
+
     public CommunityProject()
     {
-        
+        eventName = "";
+        day= 0;
+        month= 0;
+        year = 0;
+        time = "";
+        location = "";
     }
-
-
     // 2. Add a constructor with 3 parameters to set all of the instance variables to the given parameters.
     public CommunityProject(String eventName, int day, int month, int year, String time, String location)
     {
@@ -108,7 +112,7 @@ public class CommunityProject {
     }
     public static void main(String[] args) {
     // Construct 2 objects of your class using the constructor with different values
-    CommunityProject e1 = new FundraiserEvent("Charity Run", 15, 6, 2026, "3:00 pm", "Avery Park", 9000.0, " raise awareness for cancer ");
+    CommunityProject e1 = new FundraiserEvent("Charity Run", 15, 6, 2026, "3:00 pm", "Avery Park", 9000.0, " raise awareness for cancer ", 0.0);
     CommunityProject e2 = new SportEvent("Home Game", 22, 11, 2026, "12:00 pm", "Corvallis High School", "Basektball", "Spartians", "Raiders", 20);
 
 

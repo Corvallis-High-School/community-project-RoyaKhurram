@@ -5,12 +5,17 @@ private String eventFor;
 private double amtRaised =0;
 public FundraiserEvent()
 {
+    super();
+    moneyNeeded = 0.0;
+    eventFor = "";
+    amtRaised = 0.0;
 }
-public FundraiserEvent(String eventName, int day, int month, int year, String time, String location, double moneyNeeded, String eventFor)
+public FundraiserEvent(String eventName, int day, int month, int year, String time, String location, double moneyNeeded, String eventFor, double amtRaised)
 {
     super(eventName, day, month, year, time, location);
     this.moneyNeeded=moneyNeeded;
     this.eventFor = eventFor;
+    this.amtRaised = amtRaised;
 
 }
 public double getAmtRaised()

@@ -15,7 +15,13 @@ public class SportEvent extends CommunityProject
     
     }
     public SportEvent()
-    {}
+    {
+        super();
+        sport = "";
+        teamA = "";
+        teamB = "";
+        score = 0;
+    }
     public String getSport()
     {
         return sport;
