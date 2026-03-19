@@ -33,7 +33,27 @@ public class SportEvent extends CommunityProject
         return maxTickets;
 
     }
-    
+    public void setSport(String sport)
+    {
+        this.sport = sport;
+    }
+    public void setTeamA(String teamA)
+    {
+        this.teamA=teamA;
+    }
+    public void setTeamB(String teamB)
+    {
+        this.teamB = teamB;
+    }
+    public void setMaxTickets(int maxTickets)
+    {
+        this.maxTickets = maxTickets;
+
+    }
+    public void setScore(int score)
+    {
+        this.score= score;
+    }
     public String toString()
     {
         return super.toString() + " game of: " + sport + ", " + teamA + " against " + teamB + " Current score of "  + teamA + " is: " + score;
