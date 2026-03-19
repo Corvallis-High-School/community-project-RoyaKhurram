@@ -5,8 +5,6 @@ private double amtRaised = 0;
 private String eventFor;
 public FundraiserEvent()
 {
-    
-
 }
 public FundraiserEvent(String eventName, int day, int month, int year, String time, String location, double moneyNeeded, String eventFor)
 {
@@ -15,6 +13,16 @@ public FundraiserEvent(String eventName, int day, int month, int year, String ti
     this.eventFor = eventFor;
 
 }
+public double getMoneyNeeded()
+{
+    return moneyNeeded;
+}
+public String getEventFor()
+{
+    return eventFor;
+
+}
+
 public String toString()
 {
     return  super.toString() + ", " + "Money needed " + moneyNeeded + " Cause for Fundraiser: " + eventFor;
