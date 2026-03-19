@@ -64,6 +64,15 @@ public class CommunityProject {
     {
         this.month = month;
     }
+    public void setTime(String time)
+    {
+        this.time = time;
+    }
+    public void setLocation(String location)
+    {
+        this.location= location;
+    }
+
 
     // 6. Create a toString() method that returns all the information in the instance variables.
     public String toString()
