@@ -16,6 +16,24 @@ public class SportEvent extends CommunityProject
     }
     public SportEvent()
     {}
+    public String getSport()
+    {
+        return sport;
+    }
+    public String getTeamA()
+    {
+        return teamA;
+    }
+    public String getTeamB()
+    {
+        return teamB;
+    }
+    public int getMaxTickets()
+    {
+        return maxTickets;
+
+    }
+    
     public String toString()
     {
         return super.toString() + " game of: " + sport + ", " + teamA + " against " + teamB + " Current score of "  + teamA + " is: " + score;
@@ -35,6 +53,7 @@ public class SportEvent extends CommunityProject
         super.print();
         System.out.println(sport + " game." + " Team A is " + teamA + " and team B is " + teamB + " the current score is " + score);
     }
+
     }
     
     
