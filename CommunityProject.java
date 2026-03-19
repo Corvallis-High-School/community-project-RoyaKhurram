@@ -3,20 +3,30 @@ public class CommunityProject {
     private String eventName;
     private int day;
     private int month;
+    private int year;
+    private String time;
+    private String location;
+    public CommunityProject()
+    {
+        
+    }
 
 
     // 2. Add a constructor with 3 parameters to set all of the instance variables to the given parameters.
-    public CommunityProject(String eventName, int day, int month)
+    public CommunityProject(String eventName, int day, int month, int year, String time, String location)
     {
         this.eventName = eventName;
         this.day = day;
         this.month = month;
+        this.year = year;
+        this.time= time;
+        this.location= location;
     }
 
     // 3. Write a print() method that uses System.out.println to print out all the instance variables.
     public void print()
     {
-        System.out.println(eventName + " " + day + " " + month);
+        System.out.println(eventName + ": " + day + "/" + month + "/" + year + "," + time + "," + location);
     }
 
     // 4. Create accessor (get) methods for each of the instance variables.
@@ -51,7 +61,7 @@ public class CommunityProject {
     // 6. Create a toString() method that returns all the information in the instance variables.
     public String toString()
     {
-        return eventName + " " + day  + " "+ month;
+        return eventName + " : " + day  + "/" + month + "/" + year + ", " + time + ", " + location;
     }
     
 

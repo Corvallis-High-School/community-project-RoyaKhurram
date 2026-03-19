@@ -2,8 +2,8 @@ class Main {
 
   public static void main(String[] args) {
     // Construct 2 objects of your class using the constructor with different values
-    CommunityProject e1 = new CommunityProject("Charity Run", 15, 6);
-    CommunityProject e2 = new CommunityProject("Food Drive", 22, 11);
+    CommunityProject e1 = new CommunityProject("Charity Run", 15, 6, 2026, "3:00 pm", "Avery Park");
+    CommunityProject e2 = new CommunityProject("Food Drive", 22, 11, 2026, "12:00 pm", "Dutch Bros");
 
     // call all of the objects methods to test them
     e1.print();
